@@ -6,7 +6,7 @@
  * @param {array} movements Array de numbers que representa entradas y retiradas de dinero
  */
 function filterWithdraws(movements) {
-  // TODO: Implementame
+  return movements.filter(mov => mov < 0);
 }
 
 // Caso de prueba 1: Array con varios movimientos de entrada y retirada.
