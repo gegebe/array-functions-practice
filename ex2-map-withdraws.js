@@ -8,9 +8,14 @@
  */
 function bankStatement(movements) {
 
+  //.map() recorre la Array y crea una nueva según la condición.
+  //El primer return es para que devuelva la función.
   return movements.map(mov => {
-        if(mov < 0){
+      //En esta primera condición crea una Array de número negativos.
+      //Los siguientes return son para que devuelva cada uno de los casos.
+      if(mov < 0){
         return `Withdraw: ${mov}`
+      //En el else una segunda Array de números positivos.  
       } else {
         return `Diposit: ${mov}`
       };
